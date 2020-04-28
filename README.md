@@ -6,7 +6,7 @@
 use temp<br>
 db.temp.insert({"name":"QianJiaji"})
 # 2.创建集合
-use temp
+use temp<br>
 db.createCollection("admin")<br>
 db.createCollection("case")<br>
 db.createCollection("dynamic")<br>

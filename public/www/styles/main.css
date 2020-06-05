@@ -1,0 +1,258 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #2e2f3d;
+    font-family: sans-serif;
+    position: relative;
+}
+.wrapper {
+    width: 550px;
+    height: 620px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.changeDec{
+    font-size: 14px;
+    color: #A1A6AF;
+}
+.timespan{
+    font-size: 13px;
+    color: #a1a6af !important;
+}
+.msgspan{
+    display: inline-block;
+    line-height: 1.4;
+    background-color: #f3f3f3;
+    border-radius: 4px;
+    padding: 10px 9px;
+    font-size: 13px;
+    color: #252525;
+    margin-left: 5px;
+}
+#loginWrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(5, 5, 5, .6);
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding-top: 200px;
+}
+#nickWrapper {
+    display: none;
+}
+.banner {
+    height: 80px;
+    width: 100%;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.banner img{
+    margin: 0 10px;
+}
+.ban_right{
+    font-size: 14px;
+    line-height: 19px;
+    color: #343036;
+}
+.banner p {
+    float: left;
+    display: inline-block;
+}
+#status{
+    font-size: 13px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.controls {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    height: 130px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    border-top: 1px solid #e7e7e7;
+}
+#historyMsg {
+    height: 400px;
+    background-color: #fff;
+    overflow: auto;
+    padding: 2px;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+}
+#historyMsg img {
+    max-width: 99%;
+}
+#historyMsg img{
+    width: 105px;
+    padding-left: 30px;
+}
+#historyMsg p{
+    display: flex;
+
+}
+.timespan {
+    color: #ddd;
+    padding-top: 2px;
+    padding-left: 2px;
+}
+.items {
+    box-sizing: border-box;
+    height: 32px;
+    margin-bottom: 5px;
+    padding-top: 12px;
+    padding-left: 20px;
+    width: 100%;
+}
+#colorStyle {
+    width: 50px;
+    border: none;
+    padding: 0;
+}
+/*custom the file input*/
+
+.imageLable {
+    position: relative;
+}
+#sendImage {
+    position: absolute;
+    width: 26px;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+/*end custom file input*/
+
+/* #messageInput {
+    width: 440px;
+    max-width: 440px;
+    height: 90px;
+    max-height: 90px;
+    float:left;
+} */
+.send-textarea{
+    box-sizing: border-box;
+    width: 100%;
+    height: 56px;
+    padding: 0px 19px 0px 19px;
+    background-color: #fff;
+    color: #252525;
+    font-size: 13px;
+    font-family: inherit;
+    word-break: break-all;
+    white-space: normal;
+    overflow-y: auto;
+    outline: none;
+    border: none;
+    resize:none
+}
+#sendBtn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    height: 26px;
+    padding: 0 12px;
+    line-height: 26px;
+    border-radius: 4px;
+    width: 44px;
+    background: #fff;
+    color: #343036;
+    border: 1px solid #d9d9d9;
+    text-align: center;
+    font-size: 12px;
+   cursor: pointer;
+  
+}
+#emojiWrapper {
+    display: none;
+    width: 500px;
+    bottom: 105px;
+    position: absolute;
+    background-color: #aaa;
+    box-shadow: 0 0 10px #555;
+}
+#emojiWrapper img {
+    margin: 2px;
+    padding: 2px;
+    width: 25px;
+    height: 25px;
+}
+#emojiWrapper img:hover {
+    background-color: blue;
+}
+.emoji{
+    display: inline;
+}
+.input-field--tool__emoji {
+    background-image: url(../../images/sprite.png);
+    background-position: -196px -70px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 18px;
+    cursor: pointer;
+}
+.input-field--tool__image{
+    background-image: url(../../images/sprite.png);
+    background-position: -58px -122px;
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 18px;
+    cursor: pointer;
+}
+.input-field--tool__clear{
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    margin-right: 18px;
+    cursor: pointer;
+}
+#nicknameInput{
+    color: #eaeaea;
+    display: inline-block;
+    width: 300px;
+    box-sizing: border-box;
+    padding: 0;
+    color: #000;
+    background-color: #bbb;
+    box-shadow: 0 0 2px 1px #e6e6e6;
+    margin: 2px;
+    outline: 0;
+    padding: 4px 4px 4px 4px;
+    font-size: 13px;
+    line-height: 21px;
+    border: 1px solid #ccc;
+    height: auto;
+}
+#loginBtn{
+    background: #33779b;
+    color: #141414;
+    border: 1px solid #777;
+    cursor: pointer;
+    line-height: 16px;
+    box-shadow: 0 1px 1px #999;
+    outline: 0;
+    font-weight: 400;
+    border: none;
+    height: 31px;
+    color: #e0e0e0!important;
+    font-size: 14px;
+}
+footer {
+    text-align: center;
+}
